@@ -1,0 +1,119 @@
+/*
+  AppBar
+*/
+ 
+/* AppBar */
+.app-bar {
+  padding: 8px 16px;
+  background-color: #141e46;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar  .app-bar__menu {
+  display: flex;
+  align-items: center;
+  left: 0;
+  
+}
+
+.app-bar  .app-bar__menu button {
+  background-color: #41b06e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__brand h1 {
+  color: #41b06e;
+  text-transform: uppercase;
+  font-size: 22px;
+  user-select: none;
+}
+
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: #141e46;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 12px 0;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.app-bar .app-bar__navigation ul li:hover {
+  background-color: #41b06e;
+  border-radius: 10px;
+}
+
+
+/*
+  hero-element
+*/
+
+hero-element {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  background-image: url('../public/images/hero-image_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+
+
+.hero-title {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(252, 252, 252);
+  font-size: 25px;
+  text-shadow: 2px 2px 8px #141e46;
+}
+
+
+
+/*
+  Footer
+*/
+ 
+app-footer {
+  background: #141e46;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+app-footer span {
+  color: #41b06e;
+}

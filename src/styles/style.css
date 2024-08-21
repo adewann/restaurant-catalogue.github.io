@@ -1,0 +1,253 @@
+@import './components.css';
+* {
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  padding: 12px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 999;
+}
+
+.skip-link:focus{
+    top: 0;
+}
+ 
+/*
+  Main Content
+*/
+ 
+main {
+  padding: 32px;
+  flex: 1;
+}
+ 
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+  
+}
+ 
+.content .content__heading { 
+  font-weight: normal;
+}
+
+#content-header{
+  padding: 20px;
+  margin: 50px  20px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+}
+#content-header hr{
+  flex: 1;
+  height: 3px;
+  background-color: #41b06e;
+  border-radius: 10px;
+}
+
+.hrLeft {
+  margin: 0 10px 0 75px;
+}
+
+.hrRight {
+  margin: 0 75px 0 10px;
+}
+/*
+  restos
+*/
+ 
+.restos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+ 
+ 
+/*
+  resto Item
+*/
+ 
+.resto-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+ 
+.resto-item__header {
+  position: relative;
+}
+ 
+.resto-item__content a{
+  padding: 10px;
+}
+.resto-item .resto-item__header .resto-item__header__poster {
+  width: 100%;
+}
+ 
+.resto-item .resto-item__header .resto-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+ 
+.resto-item .resto-item__header .resto-item__header__rating .resto-item__header__rating__score {
+  margin-left: 10px;
+}
+ 
+.resto-item .resto-item__content {
+  padding: 16px;
+}
+ 
+.resto-item .resto-item__content h3 {
+  margin: 0 0 10px 0;
+}
+ 
+.resto-item .resto-item__content h3 a {
+  color: #db0000;
+  text-decoration: none;
+}
+ 
+.resto-item .resto-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+ 
+ 
+/*
+  resto
+*/
+ 
+.resto {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+ 
+.resto .resto__poster {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+ 
+.resto .resto__info h4 {
+  margin: 8px 0;
+}
+
+.resto__overview p {
+  text-align: justify;
+}
+
+.no-bullets{
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table ul{
+  margin: 10px;
+}
+
+th{
+  padding: 10px;
+}
+
+td{
+  margin: 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.cus-rev h3 {
+  margin-bottom: 15px;
+}
+
+.cus-rev ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.cus-rev li {
+  margin-bottom: 10px;
+}
+
+#review-form-container {
+  margin-top: 10px;
+}
+
+#review-form div {
+  margin-bottom: 10px;
+}
+
+#review-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#review-form input, #review-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#review-form button {
+  padding: 15px 15px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#review-form button:hover {
+  background-color: #0056b3;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border: 0;
+  
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+}
+
